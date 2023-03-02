@@ -1,3 +1,4 @@
+library(GenomicRanges)
 irl <- IRanges(start = c(1,3,5), end = c(3,5,7))
 print (irl)
 
@@ -9,3 +10,7 @@ width(ir2)<- 1
 print(ir2)
 names(irl) <- paste("A", 1:3, sep="")
 print(irl)
+
+
+
+
