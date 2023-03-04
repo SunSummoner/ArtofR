@@ -11,6 +11,16 @@ print(ir2)
 names(irl) <- paste("A", 1:3, sep="")
 print(irl)
 
+ir = IRanges(start = 1:3, width = 2)
+df = DataFrame(ir = ir , score = rnorm(3))
+df
+df[1,1]
+df$ir
+df2 = data.frame(ir = ir) 
+gr <- GRanges(seqnames = "chr1", strand = c("+","-","+"))
+ranges = IRanges(start= c(1,3,5), width =3)
+gr
+
 
 
 
