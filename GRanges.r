@@ -20,7 +20,8 @@ df2 = data.frame(ir = ir)
 gr <- GRanges(seqnames = "chr1", strand = c("+","-","+"))
 ranges = IRanges(start= c(1,3,5), width =3)
 gr
-
+values(gr) = DataFrame(score = rnorm(3))
+values(gr)
 
 
 
