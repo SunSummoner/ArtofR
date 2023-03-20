@@ -1,3 +1,4 @@
+install.packages("tidyverse")
 library(GenomicRanges)
 gr = GRanges(seqnames = c("chr1"),strand = c("+","-","+"), ranges = IRanges(start = c(1,3,5), width = 3))
 #Chromosomes in Granges are called seqnames
