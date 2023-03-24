@@ -77,4 +77,11 @@ dim(assay(gse103512, 'exprs'))
 
 tibble::as_tibble(assay(gse103512, "exprs"))
 
+y_id <- "GSE33126"
+gse <- getGEO(my_id)length(gse)
+gse <- gse[[1]]
+gse
+pData(gse)
+exprs(gse)
+summary(exprs(gse))
 
