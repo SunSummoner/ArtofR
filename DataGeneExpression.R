@@ -85,3 +85,24 @@ pData(gse)
 exprs(gse)
 summary(exprs(gse))
 
+my_id <- "GSE10072"
+
+gse10072 <- getGEO(my_id)
+
+my_id <- "GSE10072"
+
+gse <- gse[[1]]
+
+gse
+
+pData(gse10072)
+
+fData(gse10072)
+
+exprs(gse10072)
+
+gse10072 <- as(gse10072$GSE10072_series_matrix.txt.gz)
+
+gse10072 <- as(gse10072$GSE10072_series_matrix.txt.gz, "ExpressionSet")
+
+summary(exprs(gse10072))
